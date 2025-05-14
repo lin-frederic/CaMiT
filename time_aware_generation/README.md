@@ -3,7 +3,7 @@
 
 This script fine-tunes a Stable Diffusion model using LoRA adapters with a dataset of car images and captions provided as a JSON file.
 
-## How to Run
+### How to Run
 
 Launch training with:
 
