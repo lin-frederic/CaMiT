@@ -55,7 +55,19 @@ python inference.py \
   --batch_size 4 \
   --seed 42
 ```
-`
+
+## Embedding Extraction for Generated and Real Images
+
+Run the script specifying the model, generation method, scenario, and data directories:
+
+```bash
+python extract_embeddings.py \
+  model_name finetuned1 with_year \
+  --gen_root /path/to/generated_images \
+  --real_root /path/to/real_images \
+  --emb_root /path/to/save_embeddings \
+  --world_size 4
+```
 ## KID Computation
 This script computes the Kernel Inception Distance (KID) between real and generated image embeddings for different models and scenarios.
 ## How to Run
