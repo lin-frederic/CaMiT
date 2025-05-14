@@ -1,5 +1,5 @@
 
-# Stable Diffusion LoRA Fine-Tuning
+## Stable Diffusion LoRA Fine-Tuning
 
 This script fine-tunes a Stable Diffusion model using LoRA adapters with a dataset of car images and captions provided as a JSON file.
 
@@ -34,6 +34,28 @@ accelerate launch --mixed_precision="fp16" train_text_to_image_lora.py \
   --report_to="wandb"
 ```
 
+## Image Generation Inference
+
+This script generates car images using multiple Stable Diffusion models
+
+### How to Run
+Launch training with:
+
+```bash
+python inference.py \
+  --plain_model_path /path/to/plain_stable_diffusion \
+  --finetuned_model_1 /path/to/lora_finetuned_model_1 \
+  --finetuned_model_2 /path/to/lora_finetuned_model_2 \
+  --caption_file_without_year /path/to/captions_without_year.json \
+  --caption_file_with_year /path/to/captions_with_year.json \
+  --model_choice finetuned1 \
+  --year_option with_year \
+  --device cuda \
+  --num_inference_steps 30 \
+  --batch_size 4 \
+  --seed 42
+```
+`
 ## KID Computation
 This script computes the Kernel Inception Distance (KID) between real and generated image embeddings for different models and scenarios.
 ## How to Run
