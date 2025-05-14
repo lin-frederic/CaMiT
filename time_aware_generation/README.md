@@ -1,7 +1,7 @@
 
 # Stable Diffusion LoRA Fine-Tuning
 
-This script fine-tunes a Stable Diffusion model using LoRA adapters on a custom dataset of car images and captions.
+This script fine-tunes a Stable Diffusion model using LoRA adapters with a dataset of car images and captions provided as a JSON file.
 
 ## How to Run
 
@@ -27,9 +27,9 @@ accelerate launch --mixed_precision="fp16" train_text_to_image_lora.py \
   --lr_warmup_steps=0 \
   --dataloader_num_workers=6 \
   --seed=42 \
-  --output_dir="sd-car-model-lora" \
+  --output_dir="/path/to/checkpoints/" \
   --rank=64 \
-  --validation_prompt="A photo of a car bentley continental" \
+  --validation_prompt="some text to validate your training" \
   --validation_epochs=1 \
   --report_to="wandb"
 ```
