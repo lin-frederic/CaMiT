@@ -79,7 +79,7 @@ def extract_moco_feats(paths: List[str], model, device: torch.device) -> torch.T
 
 def extract_clip_feats(paths: List[str], clip_model, clip_preprocess, device: torch.device) -> torch.Tensor:
     feats = []
-    for p in tqdm.tqdm(paths, desc="Extracting features", unit="img"):
+    for p in tqdm.tqdm(paths, desc="Extracting features..", unit="img"):
         img = clip_preprocess(pil_loader(p)).unsqueeze(0).to(device)
         with torch.no_grad():
             f = clip_model.encode_image(img)
