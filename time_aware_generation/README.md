@@ -3,6 +3,21 @@
 
 This script fine-tunes a Stable Diffusion model using LoRA adapters with a dataset of car images and captions provided as a JSON file.
 
+#### Installing the dependencies
+Before running the scripts, make sure to install the library's training dependencies:
+```bash
+git clone https://github.com/huggingface/diffusers
+cd diffusers
+pip install .
+```
+Then cd in the example folder and run
+```bash
+pip install -r requirements.txt
+```
+And initialize an 🤗Accelerate environment with:
+```bash
+accelerate config
+```
 ### How to Run
 
 Launch training with:
