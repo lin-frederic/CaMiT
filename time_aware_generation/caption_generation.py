@@ -1,5 +1,6 @@
 import os
 import json
+import argparse
 
 def generate_caption_pairs_without_year(annotation_json, base_dir):
     with open(annotation_json, 'r') as f:
@@ -85,14 +86,17 @@ def generate_caption_pairs_with_year(annotation_json, base_dir):
 
 
 if __name__ == "__main__":
-    annotation_file = "train_annotations.json"
-    base_images_dir = "/home/data/bambaw/cars_dataset/train_blurred/"
+    parser = argparse.ArgumentParser(description="Generate caption pairs JSON files for training.")
+    parser.add_argument("--annotation_file", type=str, required=True, help="Path to annotation JSON file.")
+    parser.add_argument("--base_images_dir", type=str, required=True, help="Path to base directory of images.")
+
+    args = parser.parse_args()
 
     print("Processing without year...")
-    pairs_without_year, total_imgs1, matches1, boxes1 = generate_caption_pairs_without_year(annotation_file, base_images_dir)
+    pairs_without_year, total_imgs1, matches1, boxes1 = generate_caption_pairs_without_year(args.annotation_file, args.base_images_dir)
 
     print("Processing with year...")
-    pairs_with_year, total_imgs2, matches2, boxes2 = generate_caption_pairs_with_year(annotation_file, base_images_dir)
+    pairs_with_year, total_imgs2, matches2, boxes2 = generate_caption_pairs_with_year(args.annotation_file, args.base_images_dir)
 
     with open("caption_pairs_without_year.json", "w") as outfile1:
         json.dump(pairs_without_year, outfile1, indent=4)
