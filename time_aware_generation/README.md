@@ -1,4 +1,4 @@
-<h1 align="center">CaMiT Time-Aware Generation</h1>
+<h1 align="center">CaMiT: Time-Aware Generation</h1>
 
 ## Stable Diffusion LoRA Fine-Tuning
 
