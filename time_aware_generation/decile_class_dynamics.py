@@ -68,7 +68,7 @@ def main():
         class_dynamics = json.load(f)
     kid_df = pd.read_csv("individual_kid_values_clip_base.csv")
 
-    plot_aggregated_kid_vs_dynamics(kid_df, "finetuned2", "with_year", class_dynamics, "yearsamples_finetuned2_with_year_decile_main")
+    plot_aggregated_kid_vs_dynamics(kid_df, "finetuned2", "with_year", class_dynamics, "finetuned2_with_year_decile_main")
 
 if __name__ == "__main__":
     main()
