@@ -102,7 +102,7 @@ class CarCaptionDataset(Dataset):
 def log_validation( pipeline, args, accelerator, epoch,is_final_validation=False,):
     
     logger.info(
-        f"Running validation... \n Generating {args.num_validation_images} images with prompt:"
+        f"Running validation.... \n Generating {args.num_validation_images} images with prompt:"
         f" {args.validation_prompt}."
     )
     pipeline = pipeline.to(accelerator.device)
