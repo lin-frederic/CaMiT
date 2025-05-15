@@ -90,8 +90,8 @@ python inference.py \
   --plain_model_path /path/to/plain_stable_diffusion \
   --finetuned_model_1 /path/to/lora_finetuned_model_1 \
   --finetuned_model_2 /path/to/lora_finetuned_model_2 \
-  --caption_file_without_year /path/to/captions_without_year.json \
-  --caption_file_with_year /path/to/captions_with_year.json \
+  --caption_file_without_year /path/to/caption_counts_without_year.json \
+  --caption_file_with_year /path/to/caption_counts_with_year.json \
   --model_choice <model_name> \
   --year_option <scenario> \
   --device cuda \
