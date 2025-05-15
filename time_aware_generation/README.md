@@ -13,9 +13,9 @@ python generate_captions.py --annotation_file /path/to/annotations.json --base_i
 
 This will generate two files:
 
-    * ```caption_pairs_without_year.json```
+  * ```caption_pairs_without_year.json```
 
-    * ```caption_pairs_with_year.json```
+  * ```caption_pairs_with_year.json```
 
 These contain image paths and corresponding captions formatted for training.
 
