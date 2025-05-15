@@ -14,7 +14,7 @@ Then cd in the example folder and run
 ```bash
 pip install -r requirements.txt
 ```
-And initialize an 🤗Accelerate environment with:
+And initialize an 🤗 Accelerate environment with:
 ```bash
 accelerate config
 ```
