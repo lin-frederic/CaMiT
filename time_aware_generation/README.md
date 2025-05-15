@@ -100,7 +100,7 @@ python extract_embeddings.py \
 
 * ```model_name```: The model variant for embeddings extraction (clip_base, clip_large etc ...)
 * ```method```: Choose a generation method (plain_sd,finetuned1, finetuned2)
-* ```scenario```: Choose a caption format either "with_year" (prompts with car models + year) or "without_year" (prompts car_models)
+* ```scenario```: Choose a caption format either ```"with_year"``` (prompts with car models + year) or ```"without_year"``` (prompts car_models)
   
 ## KID Computation
 This script computes the Kernel Inception Distance (KID) between real and generated image embeddings for different models and scenarios.
