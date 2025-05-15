@@ -1,5 +1,7 @@
 <h1 align="left">CaMiT: Time-Aware Generation</h1>
 
+Time-aware image generation using temporal metadata during training. 
+
 ## Stable Diffusion LoRA Fine-Tuning
 
 This script fine-tunes a Stable Diffusion model using LoRA adapters with a dataset of car images and captions provided as a JSON file.
