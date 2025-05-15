@@ -16,7 +16,6 @@ def _map_to_cpu(storage, location):
 torch.serialization.default_restore_location = _map_to_cpu
 from sklearn.metrics.pairwise import rbf_kernel
 
-# EMB_ROOT = "/home/data/bambaw/cars_finetune/embeddings"
 SCENARIOS = ["without_year","with_year"]
 METHODS = ["finetuned1", "finetuned2", "plain_sd"]
 
