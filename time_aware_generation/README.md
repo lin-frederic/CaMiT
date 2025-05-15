@@ -75,7 +75,7 @@ python inference.py \
 
 ```--caption_file_with_year``` and ```--caption_file_without_year```: JSON files containing with and without year prompts with image counts.
 
-```--year_option``` "with_year" uses prompts including the year, "without_year" prompt ignores year info.
+```--year_option``` "with_year" flag uses prompts including the year, "without_year" flag prompt ignores year info.
 
 ```--model_choice```: Select which model to run inference with:
 ```bash
