@@ -1,4 +1,4 @@
-<h1 align="center">CaMiT: Time-Aware Generation</h1>
+<h1 align="left">CaMiT: Time-Aware Generation</h1>
 
 ## Stable Diffusion LoRA Fine-Tuning
 
@@ -67,7 +67,7 @@ accelerate launch --mixed_precision="fp16" train_text_to_image_lora.py \
 
 ## Image Generation Inference
 
-This script generates car images using multiple Stable Diffusion models
+This script generates car images using our trained models.
 
 #### Generating Captions for Inference
 
