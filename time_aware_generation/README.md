@@ -4,6 +4,21 @@
 
 This script fine-tunes a Stable Diffusion model using LoRA adapters with a dataset of car images and captions provided as a JSON file.
 
+### Generate Image-Caption Pairs
+To create the image-caption JSON files needed for Stable Diffusion training, run:
+
+```bash
+python generate_captions.py --annotation_file /path/to/annotations.json --base_images_dir /path/to/images/
+```
+
+This will generate two files:
+
+  * ```caption_pairs_without_year.json```
+
+  * ```caption_pairs_with_year.json```
+
+These contain image paths and corresponding captions formatted for training.
+
 #### Installing the dependencies
 Before running the scripts, make sure to install the library's training dependencies:
 ```bash
