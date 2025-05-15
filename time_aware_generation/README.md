@@ -8,7 +8,7 @@ This script fine-tunes a Stable Diffusion model using LoRA adapters with a datas
 To create the image-caption JSON files needed for Stable Diffusion training, run:
 
 ```bash
-python generate_captions.py --annotation_file /path/to/annotations.json --base_images_dir /path/to/images/
+python caption_generation.py --annotation_file /path/to/annotations.json --base_images_dir /path/to/images/
 ```
 
 This will generate two files:
@@ -69,6 +69,13 @@ accelerate launch --mixed_precision="fp16" train_text_to_image_lora.py \
 
 This script generates car images using multiple Stable Diffusion models
 
+#### Generating Captions for Inference
+
+Run this script to create JSON files with prompts that will be usef for inference. 
+```bash
+python generate_caption_counts.py --base_images_dir /path/to/test_images
+
+```
 ### How to Run
 Launch training with:
 
