@@ -33,7 +33,7 @@ def parse_args():
         type=str,
         choices=["with_year", "without_year"],
         required=True,
-        help="Choose whether to use captions with year or without year."
+        help="Choose whether to use captions with year or without year.."
     )
 
     return parser.parse_args()
