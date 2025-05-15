@@ -71,11 +71,17 @@ This script generates car images using multiple Stable Diffusion models
 
 #### Generating Captions for Inference
 
-Run this script to create JSON files with prompts that will be usef for inference. 
+Run this script to create JSON files with prompts that will be used for inference. 
 ```bash
-python generate_caption_counts.py --base_images_dir /path/to/test_images
+python inference_caption_generation.py --base_images_dir /path/to/test_images
 
 ```
+This process creates two JSON files:
+
+  * ```caption_counts_without_year.json``` — prompts ignoring year
+
+  * ```caption_counts_with_year.json``` — prompts including year information for finer control
+
 ### How to Run
 Launch training with:
 

@@ -22,16 +22,9 @@ from typing import List
 import torch.multiprocessing as mp
 
 
-# GEN_ROOT = "/home/data/bambaw/cars_finetune_SDXL/SDXL_generated_images"
-# REAL_ROOT = "/home/data/bambaw/cars_finetune/evaluation/test_images"
-# EMB_ROOT = "/home/data/bambaw/cars_finetune_SDXL/sdxl_embedding_root"
 MODEL_CHECKPOINTS = {
-    "mocov3_small": "/home/users/bambaw/cars_finetune/evaluation/Kid_mocov3/moco_weights/vit_small",
-    "mocov3_base":  "/home/users/bambaw/cars_finetune/evaluation/Kid_mocov3/moco_weights/vit_base",
     "clip_large":   "/home/data/bambaw/CLIP/weights/ViT-L-14/clip-vit-large-patch14.pt",
-    "clip_base":    "/home/data/bambaw/CLIP/weights/clip_base/ViT-B-32.pt",
-    "joint_pretrain_small": "/home/users/bambaw/joint_pretrain",
-    "joint_pretrain_base":  "/home/users/bambaw/joint_pretrain_base"
+    "clip_base":    "/home/data/bambaw/CLIP/weights/clip_base/ViT-B-32.pt"
 }
 SCENARIOS = ["without_year", "with_year"]
 METHODS = ["finetuned1", "finetuned2", "plain_sd"]
