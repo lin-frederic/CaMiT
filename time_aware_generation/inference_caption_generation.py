@@ -54,7 +54,7 @@ def create_json_from_test_images(test_images_dir):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate JSON caption counts for test images.")
+    parser = argparse.ArgumentParser(description="Generate JSON caption counts for test images..")
     parser.add_argument("--base_images_dir", type=str, required=True, help="Path to the base directory containing test images.")
     args = parser.parse_args()
 
