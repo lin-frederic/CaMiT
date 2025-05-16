@@ -40,6 +40,8 @@ This directory contains code for the **semi-automatic annotation** of fine-grain
 - Helps filter noisy labels before training.
 
 **Dependencies:**
+- [`transformers`](https://github.com/huggingface/transformers)
+- [`qwen-vl-utils`](https://github.com/kq-chen/qwen-vl-utils)
 - [`SAM2`](https://github.com/facebookresearch/sam2) which implement the [ICLR 2025 paper](https://openreview.net/forum?id=Ha6RTeWMd0)
 - [`flask`](https://flask.palletsprojects.com/en/stable/)
 
