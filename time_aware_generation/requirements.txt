@@ -6,4 +6,7 @@ ftfy
 tensorboard
 Jinja2
 peft==0.7.0
+wandb>=0.19.9
+matplotlib>=3.7.5
+
 

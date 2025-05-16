@@ -158,3 +158,4 @@ Thank you to the contributors of:
 * [Stable Diffusion 1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) which is an (improved) implementation of the [CVPR 2022 paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
 * the [Huggingface Diffuser](https://huggingface.co/docs/diffusers/index) library
 * the authors of Kernel Inception Distance: [KID ICLR'18 paper](https://openreview.net/forum?id=r1lUOzWCW)
+* the authors of Low-Rank Adaptation of Large Language Models (LoRA): [ICML 2023 paper](https://arxiv.org/abs/2106.09685) and the [LoRA GitHub repository](https://github.com/microsoft/LoRA)
