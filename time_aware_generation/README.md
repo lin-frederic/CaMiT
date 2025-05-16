@@ -86,7 +86,7 @@ This process creates two JSON files:
 
   * ```caption_counts_with_year.json``` — prompts including year information for finer control
 
-## Run
+### Run
 Launch inference with:
 
 ```bash
@@ -118,10 +118,6 @@ python inference.py \
 
       "finetuned2" — second LoRA fine-tuned model
 ```
-
-### Loading pretained checkpoints 
-* For making inference, download the checkpoints at (`checkpoints`)[https://huggingface.co/datasets/fredericlin/CaMiT-embeddings]
-   
 ## Embedding Extraction for Generated and Real Images
 
 Run the script specifying the model, generation method, scenario, and data directories:
