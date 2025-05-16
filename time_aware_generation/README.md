@@ -119,7 +119,9 @@ python inference.py \
       "finetuned2" — second LoRA fine-tuned model
 ```
 ### Loading checkpoints
-For making inference, get the checkpoints from here ```https://huggingface.co/datasets/fredericlin/CaMiT-embeddings```
+For making inference on the two finetuned models, get the checkpoints from here ```https://huggingface.co/datasets/fredericlin/CaMiT-embeddings```
+  * ```sd-finetune-with-year-checkpoint-305000.tar.gz```
+  * ```sd-finetune-without-year-checkpoint-305000.tar.gz```
 ## Embedding Extraction for Generated and Real Images
 
 Run the script specifying the model, generation method, scenario, and data directories:
