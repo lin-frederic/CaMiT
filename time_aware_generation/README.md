@@ -118,6 +118,10 @@ python inference.py \
 
       "finetuned2" — second LoRA fine-tuned model
 ```
+
+### Loading pretained checkpoints 
+* For making inference, download the checkpoints at (`checkpoints`)[https://huggingface.co/datasets/fredericlin/CaMiT-embeddings]
+   
 ## Embedding Extraction for Generated and Real Images
 
 Run the script specifying the model, generation method, scenario, and data directories:
