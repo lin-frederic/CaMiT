@@ -49,7 +49,7 @@ This directory contains code for the **semi-automatic annotation** of fine-grain
 - Detects and blurs human faces in car images to ensure privacy.
   
 **Dependencies:**
-- `insightface`
+- [`insightface`](https://github.com/deepinsight/insightface)
 
 ---
 
