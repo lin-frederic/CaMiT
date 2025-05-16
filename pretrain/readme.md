@@ -1,6 +1,6 @@
 # 🔧 Pretraining (MoCo v3 with ViT-S)
 
-This folder contains scripts for self-supervised pretraining of a vision transformer (ViT-S) encoder using the [MoCo v3](https://github.com/facebookresearch/moco) framework. The encoder is trained on filtered car crops to learn a car-specific representation, which is later used for fine-tuning.
+This folder contains scripts for self-supervised pretraining of a vision transformer (ViT-S) encoder using the [MoCo v3](https://github.com/facebookresearch/moco) framework that implement the [ICCV 2021 paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_An_Empirical_Study_of_Training_Self-Supervised_Vision_Transformers_ICCV_2021_paper.pdf). The encoder is trained on filtered car crops to learn a car-specific representation, which is later used for fine-tuning.
 
 ## 🗂️ Data
 
