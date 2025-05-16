@@ -86,7 +86,7 @@ This process creates two JSON files:
 
   * ```caption_counts_with_year.json``` — prompts including year information for finer control
 
-## Run
+### Run
 Launch inference with:
 
 ```bash
@@ -104,20 +104,14 @@ python inference.py \
   --seed 42
 ```
 
-### Important Flags
+Important inline parameters:
+* ```--caption_file_with_year``` and * ```--caption_file_without_year```: JSON files containing with and without year prompts with image counts.
+* ```--year_option``` "with_year" flag uses prompts including the year, "without_year" flag prompt ignores year info.
+* ```--model_choice```: Select which model to run inference with:
+  - `"plain_sd"` — base Stable Diffusion
+  - `"finetuned1"` — first LoRA fine-tuned model
+  - `"finetuned2"` — second LoRA fine-tuned model
 
-```--caption_file_with_year``` and ```--caption_file_without_year```: JSON files containing with and without year prompts with image counts.
-
-```--year_option``` "with_year" flag uses prompts including the year, "without_year" flag prompt ignores year info.
-
-```--model_choice```: Select which model to run inference with:
-```bash
-      "plain_sd" — base Stable Diffusion
-
-      "finetuned1" — first LoRA fine-tuned model
-
-      "finetuned2" — second LoRA fine-tuned model
-```
 ## Embedding Extraction for Generated and Real Images
 
 Run the script specifying the model, generation method, scenario, and data directories:
@@ -158,3 +152,4 @@ Thank you to the contributors of:
 * [Stable Diffusion 1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5) which is an (improved) implementation of the [CVPR 2022 paper](https://openaccess.thecvf.com/content/CVPR2022/papers/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.pdf)
 * the [Huggingface Diffuser](https://huggingface.co/docs/diffusers/index) library
 * the authors of Kernel Inception Distance: [KID ICLR'18 paper](https://openreview.net/forum?id=r1lUOzWCW)
+* the authors of Low-Rank Adaptation of Large Language Models (LoRA): [ICML 2023 paper](https://openreview.net/forum?id=nZeVKeeFYf9) and the [LoRA GitHub repository](https://github.com/microsoft/LoRA)

@@ -22,11 +22,11 @@ This directory contains preprocessing scripts for preparing the Flickr Cars data
 ## ⚙️ Dependencies
 
 - Python ≥ 3.9
-- `torch`
-- `torchvision`
-- `numpy`
-- `Pillow`
-- `tqdm`
+- `torch` from [PyTorch](https://github.com/pytorch/pytorch)
+- `torchvision` from [PyTorch](https://github.com/pytorch/pytorch)
+- [`numpy`](https://github.com/numpy/numpy)
+- [`Pillow`](https://github.com/python-pillow/Pillow)
+- [`tqdm`](https://github.com/tqdm/tqdm)
 - [`Ultralytics`](https://github.com/ultralytics/ultralytics) (for YOLOv11)
 
 > **Install YOLOv11:**
