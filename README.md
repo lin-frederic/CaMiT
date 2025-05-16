@@ -18,25 +18,25 @@ The repository is organized into several folders, each corresponding to a specif
 ### **Folder Structure**
 
 #### **1. `annotation`**
-- **Purpose**: Contains the code and scripts used for semi-automatic annotation of the CaMiT dataset.
+-  Contains the code and scripts used for semi-automatic annotation of the CaMiT dataset.
 
 #### **2. `clip_finetune`**
-- **Purpose**: Code for finetuning CLIP models with LoRA.
+-  Code for finetuning CLIP models with LoRA.
 
 #### **3. `incremental`**
-- **Purpose**: Contains the implementation of time-incremental classifier learning (TICL) algorithms.
+-  Contains the implementation of time-incremental classifier learning (TICL) algorithms.
 
 #### **4. `mocov3_finetune`**
-- **Purpose**: Code for finetuning MoCo v3 models with LoRA for car model classification.
+-  Code for finetuning MoCo v3 models with LoRA for car model classification.
 
 #### **5. `preprocessing`**
-- **Purpose**: Scripts for detecting the cars from scraped images
+-  Scripts for detecting the cars from scraped images
 
 #### **6. `pretrain`**
-- **Purpose**: Code for pretraining MoCoV3 (TIP)
+-  Code for pretraining MoCoV3 (TIP)
 
 #### **7. `time_aware_generation`**
-- **Purpose**: Implementation of time-aware image generation (TAIG) using Stable Diffusion.
+-  Implementation of time-aware image generation (TAIG) using Stable Diffusion.
 ---
 
 #### **Dataset**
