@@ -1,6 +1,4 @@
-## README
-
-### **CaMiT: A Time-Aware Car Model Dataset for Classification and Generation**
+## **CaMiT: A Time-Aware Car Model Dataset for Classification and Generation**
 
 #### **Overview**
 This repository contains the code and resources for the paper *"CaMiT: A Time-Aware Car Model Dataset for Classification and Generation"*. The dataset and associated code are designed to explore the temporal dynamics of car model representations and evaluate various time-aware learning strategies for fine-grained image classification and generation.
