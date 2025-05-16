@@ -40,11 +40,11 @@ The repository is organized into several folders, each corresponding to a specif
 ---
 
 #### **Dataset**
-- The dataset is available (here)[https://huggingface.co/datasets/fredericlin/CaMiT]
+- The dataset is available (`here`)[https://huggingface.co/datasets/fredericlin/CaMiT]
 
 
 #### **Running Experiments**
-1. Pretrain Mocov3 models with code in `pretrain` or download (checkpoints)[https://huggingface.co/datasets/fredericlin/CaMiT-embeddings]
+1. Pretrain Mocov3 models with code in `pretrain` or download (`checkpoints`)[https://huggingface.co/datasets/fredericlin/CaMiT-embeddings]
 2. Navigate to the `Incremental` folder to run ncm evaluation scrips
 
 
